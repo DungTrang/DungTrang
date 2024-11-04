@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngành Điện Tử và Các Ngành Khác - Sản Phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showItem(itemId) {
+            // Ẩn tất cả các sản phẩm
+            const items = document.querySelectorAll('.product-detail');
+            items.forEach(item => {
+                item.style.display = 'none';
+            });
+            
+            // Hiện sản phẩm được chọn
+            document.getElementById(itemId).style.display = 'block';
+        }
+
+        function showAllItems() {
+            // Hiển thị tất cả các sản phẩm
+            const items = document.querySelectorAll('.product-detail');
+            items.forEach(item => {
+                item.style.display = 'block';
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            showAllItems();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/banner.jpg" alt="Banner Ngành Điện Tử" style="width: 80%; height: 60px;">
+        </div>
+        <h1 style="text-align: center;">NGÀNH ĐIỆN TỬ VÀ CÁC NGÀNH KHÁC</h1>
+        <nav style="background-color: #007bff; padding: 10px; color: #ffffff; text-align: center;">
+<a href="index.html"><span style="color: #ffffff;">Trang chủ</span></a> |
+<a href="electronics.html"><span style="color: #ffffff;">Điện tử</span></a> |
+<a href="electronics.html#agriculture"><span style="color: #ffffff;">Nông sản</span></a> |
+<a href="automotive.html"><span style="color: #ffffff;">Ô tô và Phụ tùng</span></a> |
+<a href="furniture.html"><span style="color: #ffffff;">Nội thất</span></a> |
+<a href="chemicals.html"><span style="color: #ffffff;">Hóa chất</span></a> |
+<a href="machinery.html"><span style="color: #ffffff;">Máy móc và Thiết bị</span></a> |
+<a href="textile.html"><span style="color: #ffffff;">Dệt may</span></a> |
+<a href="food-beverage.html"><span style="color: #ffffff;">Thực phẩm và Đồ uống</span></a>
+</nav>
+    </header>
+    
+  <section>
+        <h2 style="text-align: center; background-color: #007bff; color: #ffffff; padding: 30px; width: 100%; margin: 40px auto;font-size: 32px;">CÁC SẢN PHẨM ĐIỆN TỬ</h2>
+        <div style="display: flex; width: 80%; margin: 0 auto;">  
+            <ul style="list-style-type: none; padding-left: 0; text-align: left; width: 40%; font-size: 22px; color: #007bff; color: #ffffff;">
+               <!-- Tiêu đề mới cho danh sách sản phẩm, thêm sự kiện onclick -->
+            <h3 onclick="showAllItems()" style="text-transform: uppercase; font-size: 26px; font-weight: bold; margin-bottom: 15px; cursor: pointer; color: #007bff;">
+                TẤT CẢ MẶT HÀNG
+            </h3>  
+                <li><a href="javascript:void(0)" onclick="showItem('iphone14')" style="font-weight: bold;">iPhone 14</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('galaxyS22')" style="font-weight: bold;">Samsung Galaxy S22</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('redmiNote11')" style="font-weight: bold;">Xiaomi Redmi Note 11</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('dellXps13')" style="font-weight: bold;">Dell XPS 13</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('macbookAirM1')" style="font-weight: bold;">MacBook Air M1</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('thinkpadX1')" style="font-weight: bold;">Lenovo ThinkPad X1 Carbon</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('samsungRt38')" style="font-weight: bold;">Tủ lạnh Samsung RT38</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('lgFrontLoad')" style="font-weight: bold;">Máy giặt LG Front Load</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('panasonicMicrowave')" style="font-weight: bold;">Lò vi sóng Panasonic NN-GD37</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('intelCorei7')" style="font-weight: bold;">Chip vi xử lý Intel Core i7</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('nvidiaRtx3060')" style="font-weight: bold;">Card đồ họa NVIDIA GeForce RTX 3060</a></li>
+                <li><a href="javascript:void(0)" onclick="showItem('dht11')" style="font-weight: bold;">Cảm biến nhiệt độ DHT11</a></li>
+            </ul>
+            <div class="product-container" style="width: 60%; display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch;">
+                <div id="iphone14" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/iphone14.jpg" alt="iPhone 14" style="width: 100%; height: auto;">
+                    <h3>iPhone 14</h3>
+                    <p>Thiết bị thông minh với thiết kế sang trọng, camera chất lượng cao và khả năng xử lý nhanh.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="galaxyS22" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/galaxy_s22.jpg" alt="Samsung Galaxy S22" style="width: 100%; height: auto;">
+                    <h3>Samsung Galaxy S22</h3>
+                    <p>Điện thoại Android với màn hình lớn, hiệu suất mạnh mẽ và camera đa chức năng.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="redmiNote11" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/redmi_note_11.jpg" alt="Xiaomi Redmi Note 11" style="width: 100%; height: auto;">
+                    <h3>Xiaomi Redmi Note 11</h3>
+                    <p>Smartphone giá rẻ với tính năng tốt, phù hợp cho người dùng phổ thông.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="dellXps13" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/dell_xps_13.jpg" alt="Dell XPS 13" style="width: 100%; height: auto;">
+                    <h3>Dell XPS 13</h3>
+                    <p>Laptop nhẹ, thiết kế mỏng, hiệu suất cao, phù hợp cho công việc và giải trí.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="macbookAirM1" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/macbook_air_m1.jpg" alt="MacBook Air M1" style="width: 100%; height: auto;">
+                    <h3>MacBook Air M1</h3>
+                    <p>Máy tính xách tay của Apple với hiệu suất ấn tượng và thời lượng pin lâu.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="thinkpadX1" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/thinkpad_x1.jpg" alt="Lenovo ThinkPad X1 Carbon" style="width: 100%; height: auto;">
+                    <h3>Lenovo ThinkPad X1 Carbon</h3>
+                    <p>Laptop doanh nhân với bàn phím tuyệt vời và tính năng bảo mật cao.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="samsungRt38" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/samsung_rt38.jpg" alt="Tủ lạnh Samsung RT38" style="width: 100%; height: auto;">
+                    <h3>Tủ lạnh Samsung RT38</h3>
+                    <p>Tủ lạnh inverter tiết kiệm năng lượng, thiết kế hiện đại và khả năng lưu trữ lớn.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="lgFrontLoad" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/lg_front_load.jpg" alt="Máy giặt LG Front Load" style="width: 100%; height: auto;">
+                    <h3>Máy giặt LG Front Load</h3>
+                    <p>Máy giặt cửa trước, tiết kiệm nước và năng lượng, với nhiều chế độ giặt.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="panasonicMicrowave" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/panasonic_microwave.jpg" alt="Lò vi sóng Panasonic NN-GD37" style="width: 100%; height: auto;">
+                    <h3>Lò vi sóng Panasonic NN-GD37</h3>
+                    <p>Lò vi sóng có chức năng nướng, giúp nấu nướng nhanh chóng và tiện lợi.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="intelCorei7" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/intel_core_i7.jpg" alt="Chip vi xử lý Intel Core i7" style="width: 100%; height: auto;">
+                    <h3>Chip vi xử lý Intel Core i7</h3>
+                    <p>Bộ vi xử lý mạnh mẽ, phù hợp cho máy tính để bàn và laptop hiệu suất cao.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="nvidiaRtx3060" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/nvidia_rtx_3060.jpg" alt="Card đồ họa NVIDIA GeForce RTX 3060" style="width: 100%; height: auto;">
+                    <h3>Card đồ họa NVIDIA GeForce RTX 3060</h3>
+                    <p>Linh kiện tăng cường khả năng xử lý đồ họa cho game và thiết kế.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+                <div id="dht11" class="product-detail" style="width: 30%; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <img src="images/dht11.jpg" alt="Cảm biến nhiệt độ DHT11" style="width: 100%; height: auto;">
+                    <h3>Cảm biến nhiệt độ DHT11</h3>
+                    <p>Thiết bị đo nhiệt độ và độ ẩm, ứng dụng trong các dự án DIY và hệ thống tự động hóa.</p>
+                    <button style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer; width: 100%; height: 40px; display: block;">Liên hệ CSKH</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for Agriculture Products -->
+    <section id="agriculture">
+        <h2 style="text-align: center; background-color: #007bff; color: #ffffff; padding: 10px; width: 80%; margin: 50px auto;">CÁC SẢN PHẨM NÔNG SẢN</h2>
+        <ul style="list-style-type: none; padding-left: 0; text-align: left; width: 80%; margin: 50px auto 0 auto;">
+            <li>Gạo
+                <div class="product-container">
+                    <div class="product">
+                        <img src="images/rice1.jpg" alt="Gạo Thơm">
+                        <h3 id="Gạo Thơm">Gạo Thơm</h3>
+                        <p>Gạo thơm chất lượng cao, phù hợp cho bữa ăn gia đình.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/rice2.jpg" alt="Gạo Nếp">
+                        <h3 id="Gạo Nếp">Gạo Nếp</h3>
+                        <p>Gạo nếp dẻo, phù hợp cho các món ăn truyền thống.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/rice3.jpg" alt="Gạo Lứt">
+                        <h3 id="Gạo Lứt">Gạo Lứt</h3>
+                        <p>Gạo lứt giàu dinh dưỡng, tốt cho sức khỏe.</p>
+                    </div>
+                </div>
+            </li>
+            <li>Trái cây
+                <div class="product-container">
+                    <div class="product">
+                        <img src="images/banana.jpg" alt="Chuối">
+                        <h3 id="Chuối">Chuối</h3>
+                        <p>Trái cây nhiệt đới giàu kali, tốt cho sức khỏe.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/mango.jpg" alt="Xoài">
+                        <h3 id="Xoài">Xoài</h3>
+                        <p>Xoài ngọt, thơm ngon, phù hợp để làm món tráng miệng.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/orange.jpg" alt="Cam">
+                        <h3 id="Cam">Cam</h3>
+                        <p>Cam tươi, cung cấp vitamin C, tốt cho hệ miễn dịch.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Other Sections for Different Industries -->
+    <section>
+        <h2>Các sản phẩm khác</h2>
+        <div class="category-container">
+            <div class="category">
+                <h3 id="Ô tô và Phụ tùng">Ô tô và Phụ tùng</h3>
+                <p>Các sản phẩm ô tô và phụ tùng nhập khẩu.</p>
+                <a href="automotive.html"><span style="color: #ffffff;">Xem thêm</span></a>
+            </div>
+            <div class="category">
+                <h3 id="Nội thất">Nội thất</h3>
+                <p>Các sản phẩm nội thất hiện đại và tiện nghi.</p>
+                <a href="furniture.html"><span style="color: #ffffff;">Xem thêm</span></a>
+            </div>
+            <div class="category">
+                <h3 id="Hóa chất">Hóa chất</h3>
+                <p>Các sản phẩm hóa chất nhập khẩu, đảm bảo chất lượng.</p>
+                <a href="chemicals.html"><span style="color: #ffffff;">Xem thêm</span></a>
+            </div>
+            <div class="category">
+                <h3 id="Máy móc và Thiết bị">Máy móc và Thiết bị</h3>
+                <p>Các thiết bị máy móc hiện đại phục vụ công nghiệp.</p>
+                <a href="machinery.html"><span style="color: #ffffff;">Xem thêm</span></a>
+            </div>
+            <div class="category">
+                <h3 id="Dệt may">Dệt may</h3>
+                <p>Các sản phẩm dệt may chất lượng cao.</p>
+                <a href="textile.html"><span style="color: #ffffff;">Xem thêm</span></a>
+            </div>
+            <div class="category">
+                <h3 id="Thực phẩm và Đồ uống">Thực phẩm và Đồ uống</h3>
+                <p>Các mặt hàng thực phẩm và đồ uống an toàn, chất lượng.</p>
+                <a href="food-beverage.html"><span style="color: #ffffff;">Xem thêm</span></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
